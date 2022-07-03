@@ -19,6 +19,7 @@
 		D1811ACD284013B600279326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1811ACB284013B600279326 /* Main.storyboard */; };
 		D1811ACF284013B700279326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1811ACE284013B700279326 /* Assets.xcassets */; };
 		D1811AD2284013B700279326 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1811AD0284013B700279326 /* LaunchScreen.storyboard */; };
+		D1841F332871D003000FA160 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D1841F322871D003000FA160 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1841F332871D003000FA160 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +119,9 @@
 			dependencies = (
 			);
 			name = NetflixStApp;
+			packageProductDependencies = (
+				D1841F322871D003000FA160 /* Kingfisher */,
+			);
 			productName = NetflixStApp;
 			productReference = D1811AC2284013B600279326 /* NetflixStApp.app */;
 			productType = "com.apple.product-type.application";
@@ -145,6 +150,9 @@
 				Base,
 			);
 			mainGroup = D1811AB9284013B600279326;
+			packageReferences = (
+				D1841F312871D003000FA160 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D1811AC3284013B600279326 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -398,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1841F312871D003000FA160 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1841F322871D003000FA160 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1841F312871D003000FA160 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1811ABA284013B600279326 /* Project object */;
 }
